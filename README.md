@@ -29,6 +29,7 @@ when you type `make clean`.
     - `matplotlib`
     - `numpy`
     - `sys`
+    - `click`
     - `collections`
     - `wordcount`
     - `jupyter`
