@@ -1,19 +1,13 @@
-"""Generates a wordcounts from books.
-
-Usage: src/wordcount.py <input_file> <output_file>
-
-Options:
-<input_file>     Path (including filename) to data file
-<output_file>    Path (including filename) of where to locally write the file
-"""
-
-from docopt import docopt
-
-opt = docopt(__doc__)
+import click
 
 DELIMITERS = ". , ; : ? $ @ ^ < > # % ` ! * - = ( ) [ ] { } / \" '".split()
 
+@click.command()
+@click.option('--input_file', type=str, help = 'Path (including filename) to data file')
+@click.option('--output_file', type=str, help = 'Path (including filename) of where to locally write the file')
+
 def main(input_file, output_file):
+    '''Generates a wordcounts from books.'''
     min_length = 1
     word_count(input_file, output_file, min_length)
 
@@ -135,4 +129,4 @@ def word_count(input_file, output_file, min_length=1):
     save_word_counts(output_file, percentage_counts)
 
 if __name__ == '__main__':
-    main(opt["<input_file>"], opt["<output_file>"])
+    main()
