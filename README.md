@@ -25,13 +25,11 @@ It should reset the analysis the starting point
 when you type `make clean`.
 
 ### Depenedencies
-- R & R libraries:
-    - `rmarkdown`
-    - `knitr`
-    - `here`
 - Python & Python libraries:
     - `matplotlib`
     - `numpy`
     - `sys`
     - `collections`
     - `wordcount`
+    - `jupyter`
+    - `jupyter book`
