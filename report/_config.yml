@@ -1,0 +1,5 @@
+title: "# Book word count report"
+author: "Tiffany Timbers"
+date: "2023-12-01"
+execute:
+  execute_notebooks: force 
