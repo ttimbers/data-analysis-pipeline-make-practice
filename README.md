@@ -25,12 +25,9 @@ It should reset the analysis the starting point
 when you type `make clean`.
 
 ### Depenedencies
+- GNU Make
+- Quarto
 - Python & Python libraries:
-    - `matplotlib`
-    - `numpy`
-    - `sys`
     - `click`
-    - `collections`
-    - `wordcount`
-    - `jupyter`
-    - `jupyter book`
+    - `matplotlib`
+    - `pandas`

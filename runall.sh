@@ -22,4 +22,4 @@ python scripts/plotcount.py --input_file=results/last.dat --output_file=results/
 python scripts/plotcount.py --input_file=results/sierra.dat --output_file=results/figure/sierra.png
 
 # write the report
-jupyter-book build report
+quarto render report/count_report.qmd
