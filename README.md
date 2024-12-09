@@ -13,7 +13,7 @@ novels. It reports the top 10 most occurring words in each book in a [report](do
 2. Run the following commands to create the conda environment:
 
 ```
-conda env create -f environment.yml 
+conda-lock install --name da-pipeline-make conda-lock.yml
 ```
 
 #### Run the analysis 
@@ -21,7 +21,7 @@ conda env create -f environment.yml
 Activate the conda environment:
 
 ```
-conda activate data-analysis-practice
+conda activate da-pipeline-make
 ```
 
 Run the analysis:

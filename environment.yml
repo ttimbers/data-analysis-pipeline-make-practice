@@ -1,4 +1,4 @@
-name: data-analysis-practice
+name: da-pipeline-make
 channels:
   - conda-forge
   - defaults
@@ -7,3 +7,4 @@ dependencies:
   - pandas=2.2.0
   - python=3.12.1
   - matplotlib=3.8.3
+  - quarto
